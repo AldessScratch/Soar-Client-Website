@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Soar Client​, Soar Client​, What is the Soar Client?, Screenshots">
+    <meta name="description" content="A modern and next-generation Minecraft PvP client that offers the best PvP experience and various mods.">
+    <link rel="icon" type="image/x-icon" href="./img/soar.png">
+    <title>Soar Client | The best modern PVP client</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Soar Website",
+		"logo": "images/soarlogo.png"
+}</script>
+</head>
+  <body>
+    <!-- aldesssc -->
+    <div class="topsection">
+      <div class="navbar">
+        <img onclick="location.href = './'" src="./img/soar.png" alt="soarlogo">
+        <h5 onclick="location.href = './'">Soar Client</h5>
+        <button class="dl"><i class='bx bxs-download'></i> Download</button>
+      </div>
+      <div class="main">
+        <img src="./img/soar.png" alt="soarlogo">
+        <h1>Soar Client</h1>
+        <h2>A modern and next-generation Minecraft PvP client</h2>
+        <div class="cards">
+          <div class="card">
+            <i class='bx bx-cube' ></i>
+            <p>1.8.9</p>
+          </div>
+          <div class="card">
+            <i class='bx bx-tachometer'></i>
+            <p>FPS Boost</p>
+          </div>
+          <div class="card">
+            <i class='bx bxs-t-shirt'></i>
+            <p>Free capes</p>
+          </div>
+          <div class="card">
+            <i class='bx bxs-grid-alt' ></i>
+            <p>1OO+ mods</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="dl"><i class='bx bxs-download'></i> Download</button>
+          <button class="discord" onclick="window.open('https://discord.gg/soar-client-967307105516281917')"><i class='bx bxl-discord-alt' ></i> Discord</button>
+        </div>
+      </div>
+    </div>
+    <div class="wii">
+      <h1>What is Soar Client</h1>
+      <h2>It is a client that features a very modern design and numerous functionalities</h2>
+      <iframe src="https://www.youtube.com/embed/1DCj7mYzFK0?si=xMI_qRqenEGAUa28&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="screens">
+      <!-- Ty w3school -->
+      <h1>Screenshots</h1>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./img/mainmenu.png" style="width:100%">
+          <div class="text">Main menu</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./img/modmenu.png" style="width:100%">
+          <div class="text">Mod menu</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./img/capemenu.png" style="width:100%">
+          <div class="text">Cape menu</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+    <script>
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+  </body>
+</html>
