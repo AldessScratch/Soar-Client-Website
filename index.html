@@ -21,7 +21,7 @@
       <div class="navbar">
         <img onclick="location.href = './'" src="./img/soar.png" alt="soarlogo">
         <h5 onclick="location.href = './'">Soar Client</h5>
-        <button class="dl"><i class='bx bxs-download'></i> Download</button>
+        <button class="dl" onclick="location.href = 'download'"><i class='bx bxs-download'></i> Download</button>
       </div>
       <div class="main">
         <img src="./img/soar.png" alt="soarlogo">
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="buttons">
-          <button class="dl"><i class='bx bxs-download'></i> Download</button>
+          <button class="dl" onclick="location.href = 'download'"><i class='bx bxs-download'></i> Download</button>
           <button class="discord" onclick="window.open('https://discord.gg/soar-client-967307105516281917')"><i class='bx bxl-discord-alt' ></i> Discord</button>
         </div>
       </div>
@@ -91,6 +91,13 @@
           <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
     </div>
+    <div class="socials">
+      <img onclick="window.open('https://discord.gg/soar-client-967307105516281917')" src="./img/discord.png" alt="discord">
+      <img class="x" onclick="window.open('https://twitter.com/EldoDebug')" src="./img/x.png" alt="x">
+      <img onclick="window.open('https://space.bilibili.com/1472638140')" src="./img/bilibili.png" alt="bilibili">
+      <img onclick="window.open('https://www.youtube.com/channel/UCJYcrccMmfPw3-0EZneKNEA')" src="./img/youtube.png" alt="youtube">
+    </div>
+    <footer><p class="left0">&copy; Copyright 2022-2023 Soar Client</p><p class="center">GUI inspired by Tenacity and Rise</p><p class="right" onclick="location.href = 'legal'">Indication based on the Act on Specified Commercial Transactions</p></footer>
     <script>
       let slideIndex = 1;
 showSlides(slideIndex);
