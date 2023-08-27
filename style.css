@@ -15,6 +15,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     max-height: 120vh;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
 .navbar {
     display: flex;
@@ -32,7 +33,7 @@ body {
 }
 .navbar h5 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 300;
     color: white;
     margin-left: 10px;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
@@ -46,7 +47,7 @@ body {
     border-radius: 15px;
     border: 0;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: white;
     background-color: #76bb64;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
@@ -60,6 +61,7 @@ body {
 
   @media screen and (max-width: 600px) {
     .wii iframe {
+        border-radius: 15px;
         height: 185px;
         width: 300px;
     }
@@ -99,7 +101,7 @@ body {
 }
 .main h2 {
     text-align: center;
-    font-weight: 500;
+    font-weight: 300;
     color: white;
     font-size: 25px;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
@@ -110,7 +112,7 @@ body {
     border-radius: 15px;
     border: 0;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: white;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
@@ -134,17 +136,19 @@ button.dl {
     text-align: center;
     color: #000000;
     font-size: 40px;
+    font-weight: 400;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
     margin-bottom: 0;
 }
 .wii h2 {
     text-align: center;
-    font-weight: 500;
+    font-weight: 300;
     color: #000000;
     font-size: 20px;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
 .wii iframe {
+    border-radius: 15px;
     margin-top: 50px;
     height: 315px;
     width: 560px;
@@ -198,6 +202,7 @@ i:hover{
 .screens h1 {
     text-align: center;
     color: #000000;
+    font-weight: 400;
     font-size: 40px;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
     margin-bottom: 0;
@@ -297,12 +302,14 @@ footer {
 }
 footer p {
    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
+   font-weight: 300;
 }
 p.right {
     text-decoration: underline;
 }
 
 .socials{
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,7 +365,6 @@ p.right {
 }
 
 .dlpage .cards button{
-    width: 190px;
     margin-top: 50px;
     justify-content: center;
     align-items: center;
@@ -367,7 +373,7 @@ p.right {
     border-radius: 15px;
     border: 0;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     color: white;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
     background-color: #ffffff81;
