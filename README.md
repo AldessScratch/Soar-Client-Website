@@ -1,5 +1,5 @@
 # Soar-Client-Website
 
-Redesign https://soarclient.com cus its made on nicepage
+Redesign of https://soarclient.com
 
 https://soarclient.netlify.app
