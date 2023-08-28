@@ -41,7 +41,6 @@ body {
     .navbar h5 {
        display: none;
     }
-    
   }
 
   @media screen and (min-height: 1500px) {
@@ -101,7 +100,7 @@ body {
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
     margin: 10px;
   }
-  }
+}
 
   @media screen and (max-width: 600px) {
     
@@ -131,7 +130,7 @@ body {
     transition: all 0.2s ease-in-out;
 }
 .main img {
-    margin-top: 150px;
+    margin-top: 50px;
     height: 250px;
     width: 250px;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
@@ -169,6 +168,10 @@ body {
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
 .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 button.discord {
@@ -350,7 +353,7 @@ i:hover{
 footer {
     display: flex;
     width: 100%;
-    height: 100px;
+    min-height: 120px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -396,58 +399,7 @@ p.right {
     transition: all 0.2s ease-in-out;
 
 }
-.download {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-    width: 100%;
-}
-.download h1 {
-    color: white;
-    font-size: 55px;
-    margin-bottom: 0;
-    text-align: center;
-}
-.dlpage {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.dlpage img{
-    height: 150px;
-    width: 150px;
-}
-.dlpage .cards {
-    margin: 100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 
-.dlpage .cards button{
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 10px;
-    border-radius: 15px;
-    border: 0;
-    font-size: 22px;
-    font-weight: 400;
-    color: white;
-    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
-    background-color: #ffffff81;
-}
-.dlpage .cards button:hover{
-    background-color: #76bb64;
-    transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
-}
 .legal {
     display: flex;
     justify-content: center;

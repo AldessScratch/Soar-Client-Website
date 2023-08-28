@@ -1,0 +1,78 @@
+.download {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+}
+.download h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.dlpage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dlpage img{
+    height: 150px;
+    width: 150px;
+}
+.dlpage .cards {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dlpage .cards button{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
+    background-color: #ffffff81;
+}
+.dlpage .cards button:hover{
+    background-color: #76bb64;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 600px) {
+
+    .download {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 1300px;
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 545px) {
+    .dlpage .cards {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  }
