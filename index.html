@@ -59,8 +59,8 @@
       </div>
     </div>
     <div class="wii">
-      <h1>What is Soar Client</h1>
-      <h2>It is a client that features a very modern design and numerous functionalities</h2>
+      <h1 class="title">What is Soar Client</h1>
+      <h2 class="sectitle">It is a client that features a very modern design and numerous functionalities</h2>
       <iframe class="ytbvideo hidden" src="https://www.youtube.com/embed/1DCj7mYzFK0?si=xMI_qRqenEGAUa28&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="screens">
@@ -137,11 +137,16 @@ function showSlides(n) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('fadein-animation');
+    }else{
+      entry.target.classList.remove('fadein-animation');
     }
   });
 });
 
-observer.observe(document.querySelector('.ytbvideo'));
+observer.observe(document.querySelector('.centertext'));
+observer.observe(document.querySelector('.cards'));
+observer.observe(document.querySelector('.title'));
+observer.observe(document.querySelector('.sectitle'));
 observer.observe(document.querySelector('.slideshow-container'));
     </script>
   </body>

@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="download">
-        <h1>Download</h1>
+        <h1 class="title">Download</h1>
         <div class="dlpage">
           <div class="cards">
             <h4>Windows 64 bits</h4>
@@ -53,5 +53,18 @@
       </div>
       
     </footer>
+    <script>
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fadein-animation');
+    }else{
+      entry.target.classList.remove('fadein-animation');
+    }
+  });
+});
+observer.observe(document.querySelector('.title'));
+observer.observe(document.querySelector('.dlpage'));
+    </script>
   </body>
 </html>
