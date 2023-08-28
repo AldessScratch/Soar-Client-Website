@@ -13,8 +13,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
-    max-height: 120vh;
+    min-height: 1000px;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
 .navbar {
@@ -52,23 +51,83 @@ body {
     background-color: #76bb64;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
-
 @media screen and (max-width: 500px) {
+    
     .navbar h5 {
        display: none;
     }
+    
   }
 
-  @media screen and (max-width: 600px) {
-    .wii iframe {
-        border-radius: 15px;
-        height: 185px;
-        width: 300px;
-    }
+  @media screen and (min-height: 1500px) {
     .main img {
         display: none;
     }
   }
+
+@media screen and (max-width: 380px) {
+    .main h2 {
+        margin-top: 150px;
+        text-align: center;
+        font-weight: 300;
+        color: white;
+        font-size: 20px;
+        filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
+    }
+    .main h1 {
+        display: none;
+    }
+  }
+  
+@media screen and (max-width: 280px) {
+    .main h2 {
+        margin-top: 400px;
+        text-align: center;
+        font-weight: 300;
+        color: white;
+        font-size: 15px;
+        filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
+    }
+    .main h1 {
+        display: none;
+    }
+    .topsection {
+        background-image: url("./img/background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 1200px;
+        filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
+    }
+    
+.cards {
+    margin-top: 20px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards .card{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: #a8a8a896;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
+    margin: 10px;
+  }
+  }
+
+  @media screen and (max-width: 600px) {
+    
+    .main img {
+        display: none;
+    }
+  }
+
 .main{
     display: flex;
     justify-content: center;
@@ -88,11 +147,13 @@ body {
     transition: all 0.2s ease-in-out;
 }
 .main img {
+    margin-top: 150px;
     height: 250px;
     width: 250px;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
 .main h1 {
+
     color: white;
     font-size: 55px;
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
@@ -107,6 +168,7 @@ body {
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
 .main button {
+    margin-bottom: 50px;
     margin-right: 20px;
     padding: 15px;
     border-radius: 15px;
@@ -150,8 +212,8 @@ button.dl {
 .wii iframe {
     border-radius: 15px;
     margin-top: 50px;
-    height: 315px;
-    width: 560px;
+    width: 55vw;
+    height: calc(55vw * 0.65);
 }
 
 .cards {
@@ -218,7 +280,7 @@ i:hover{
     transition: all 0.2s ease-in-out;
 }
 .slideshow-container {
-  max-width: 1000px;
+  width: 70vw;
   position: relative;
   margin: auto;
   margin-top: 20px;
@@ -421,4 +483,27 @@ button {
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
     font-size: 20px;
     text-align: right;
+}
+
+.faq {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.faq h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 400;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
+    margin-bottom: 0;
+}
+.faq h2 {
+    text-align: center;
+    font-weight: 300;
+    color: #000000;
+    font-size: 20px;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
