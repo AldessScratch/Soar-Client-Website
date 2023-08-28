@@ -12,7 +12,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 1000px;
+    min-height: 1100px;
 }
 .navbar {
     display: flex;
@@ -144,7 +144,7 @@ body {
 }
 @keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
       opacity: 1;
@@ -186,8 +186,6 @@ button.dl {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation-name: fadeIn;
-    animation-duration: 2s;
 }
 .wii h1 {
     text-align: center;
@@ -207,6 +205,7 @@ button.dl {
     margin-top: 50px;
     width: 55vw;
     height: calc(55vw * 0.65);
+    
 }
 
 .cards {
@@ -254,8 +253,6 @@ i:hover{
     filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.4));
 }
 .screens {
-    animation-name: fadeIn;
-    animation-duration: 2s;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -339,11 +336,6 @@ i:hover{
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
 }
 
 @media only screen and (max-width: 300px) {
@@ -473,3 +465,12 @@ footer .bottomfooter {
     animation-name: fadeIn;
     animation-duration: 1s;
 }
+
+a {
+    color: #000000;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .fadein-animation {
+        animation: fadeIn 1s 1;
+    }
+  }
