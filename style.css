@@ -124,13 +124,9 @@ body {
 }
 .navbar button:hover{
     background-color: #ffffff81;
-    transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
 }
 .main button:hover{
     background-color: #ffffff81;
-    transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
 }
 .main img {
     margin-top: 50px;
@@ -180,10 +176,14 @@ body {
     margin-top: 50px;
 }
 button.discord {
+    transition: all 0.2s ease-in-out;
     background-color: #5865F2;
+    transform: scale(1);
 }
 button.dl {
+    transition: all 0.2s ease-in-out;
     background-color: #22b145;
+    transform: scale(1);
 }
 .wii {
     margin-top: 100px;
@@ -221,6 +221,8 @@ button.dl {
     flex-wrap: wrap;
 }
 .cards .card{
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -234,12 +236,27 @@ button.dl {
   }
 .card:hover{
     transform: scale(1.1);
+}
+.card:not(:hover){
+    transition-delay: .1s;
+}
+i {
+    transform: scale(1);
     transition: all 0.2s ease-in-out;
 }
 i:hover{
     transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
 }
+i:not(:hover){
+    transition-delay: .1s;
+}
+button:not(:hover){
+    transition-delay: .1s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
 .cards .card i {
     font-size: 50px;
     color: #fff;
@@ -386,6 +403,8 @@ p.right {
     width: 40px;
     margin: 10px;
     cursor: pointer;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
 }
 .socials img.x{
     height: 30px;
@@ -394,8 +413,9 @@ p.right {
 }
 .socials img:hover{
     transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
-
+}
+.socials img:not(:hover){
+    transition-delay: .1s;
 }
 
 .legal {
