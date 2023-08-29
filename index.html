@@ -31,7 +31,7 @@
       <div class="main">
         <div class="centertext">
           <img src="./img/soar.png" alt="soarlogo">
-          <h1>Soar Client <sup>7.1</sup></h1>
+          <h1>Soar Client</h1>
           <h2>The best modern and next-generation Minecraft PvP client</h2>
         </div>
         <div class="cards">
@@ -65,7 +65,7 @@
     </div>
     <div class="screens">
       <!-- Ty w3school -->
-      <h1>Screenshots</h1>
+      <h1 class="title2">Screenshots</h1>
       <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -137,8 +137,6 @@ function showSlides(n) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('fadein-animation');
-    }else{
-      entry.target.classList.remove('fadein-animation');
     }
   });
 });
@@ -147,6 +145,7 @@ observer.observe(document.querySelector('.centertext'));
 observer.observe(document.querySelector('.cards'));
 observer.observe(document.querySelector('.title'));
 observer.observe(document.querySelector('.sectitle'));
+observer.observe(document.querySelector('.title2'));
 observer.observe(document.querySelector('.ytbvideo'));
 observer.observe(document.querySelector('.slideshow-container'));
     </script>
